@@ -3,7 +3,6 @@ package com.example.mvvmretrofit.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvmretrofit.R
 import com.example.mvvmretrofit.data.CountriesModelItem
@@ -12,7 +11,6 @@ import kotlinx.android.synthetic.main.recyclerview_item.view.*
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
     private var countryList : List<CountriesModelItem>? = null
-
 
     fun setCountryList(countryList : List<CountriesModelItem>?){
         this.countryList = countryList

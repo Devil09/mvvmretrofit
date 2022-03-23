@@ -4,10 +4,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class RetrofitInstance {
+object RetrofitInstance {
 
-
-    companion object {
         val BASE_URL = "https://restcountries.com/v2/"
 
         fun getRetroInstance(): Retrofit {
@@ -16,5 +14,5 @@ class RetrofitInstance {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
-    }
+
 }
